@@ -1,0 +1,33 @@
+{
+  "name": "hubot-fmg",
+  "version": "0.0.1",
+  "description": "A Hubot script to generate a fake email with FakeMailGenerator",
+  "main": "src",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register"
+  },
+  "engines": {
+    "node": ">=0.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lgaticaq/hubot-fmg.git"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "author": "Leonardo Gatica",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lgaticaq/hubot-fmg/issues"
+  },
+  "homepage": "https://github.com/lgaticaq/hubot-fmg#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coffee-script": "^1.10.0",
+    "hubot-test-helper": "^1.4.4",
+    "mocha": "^2.4.5"
+  }
+}
