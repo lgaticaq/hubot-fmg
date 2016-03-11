@@ -2,7 +2,7 @@
 #   A Hubot script to generate a fake email with FakeMailGenerator
 #
 # Dependencies:
-#   "fmg": "0.0.2"
+#   "fmg2": "0.0.4"
 #
 # Configuration:
 #   None
@@ -14,7 +14,7 @@
 # Author:
 #   lgaticaq
 
-fmg = require "fmg"
+fmg = require "fmg2"
 
 module.exports = (robot) ->
   watcher = null
@@ -29,7 +29,7 @@ module.exports = (robot) ->
       return
 
   robot.respond /fmg watch ([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,})/i, (res) ->
-    watcher = fmg.watch(res.match[1]);
+    watcher = fmg.watch(res.match[1])
     watcher.once "email", (email) ->
       message = "Got a :email:\n"
       message += "> Sender: #{email.sender}\n"

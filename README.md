@@ -14,3 +14,10 @@ npm i -S hubot-fmg
 ```
 
 add `["hubot-fmg"]` to `external-scripts.json`.
+
+
+## Examples
+
+`hubot fmg domains` - `Grab all domains availables`
+
+`hubot fmg watch <email>` - `Watch new emails from <email> inbox`
