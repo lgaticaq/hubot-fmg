@@ -27,7 +27,9 @@ describe "hubot-fmg", ->
     it "should return all domains", ->
       expect(room.messages).to.eql([
         ["user", "hubot fmg domains"]
-        ["hubot", "armyspy.com, cuvox.de, dayrep.com, einrot.com, fleckens.hu, gustr.com, jourrapide.com, rhyta.com, superrito.com, teleworm.us"]
+        ["hubot", "armyspy.com, cuvox.de, dayrep.com, einrot.com, " +
+        "fleckens.hu, gustr.com, jourrapide.com, rhyta.com, superrito.com, " +
+        "teleworm.us"]
       ])
 
   context "watch a email", ->
@@ -47,5 +49,7 @@ describe "hubot-fmg", ->
     it "should return a new email", ->
       expect(room.messages).to.eql([
         ["user", "hubot fmg watch brin1979@dayrep.com"]
-        ["hubot", "Got a :email:\n> Sender: Mailgun Sandbox <postmaster@sandbox001d115bba6a4420b95683d91ab467ab.mailgun.org>\n> Subject: Test\n> Body: \n    Test1\n    \n  "]
+        ["hubot", "Got a :email:\n> Sender: Mailgun Sandbox " +
+        "<postmaster@sandbox001d115bba6a4420b95683d91ab467ab.mailgun.org>" +
+        "\n> Subject: Test\n> Body: \n    Test1\n    \n  "]
       ])
